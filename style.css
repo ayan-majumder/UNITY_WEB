@@ -1,0 +1,208 @@
+*{
+	margin: 0;
+	padding: 0;
+}	
+div.banner{
+	position: relative;
+	width: 100%;
+	height: 20%;
+	background-image: url("images/startup-photos.jpg");
+	background-size: cover;
+	}
+#overlay{
+	width: 100%;
+	height: 500px;
+	background-color: rgba(0,0,0,0.5);
+}
+#banner-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	letter-spacing: 6px;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-family: banner;
+	text-align: center;
+	vertical-align: center;
+	margin: 0;
+	font-size: 28px;
+}
+.logo{
+		
+		position: absolute;
+		width: 120px;
+		height: 60px;
+		top: 5%;
+		left: 20%;
+}
+
+@font-face{
+	font-family: banner;
+	src: url("ARVIN/Arvin Light.ttf");
+}
+ul{
+	width:100%;
+	position: absolute;
+    list-style-type: none;
+    bottom: 2%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+
+   		display: inline-block;	
+   }
+
+li a {
+	font-family: banner;
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+li a::after {
+    content: "";
+    display: block;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: cyan;
+    transition: width .3s;
+    }
+
+li a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+li a:hover::after{
+	width: 100%;
+	
+	
+}
+ .digital-wrap{
+ 		padding: 20px 0px;
+ 		text-align: center;
+ 		width: 100%;
+ 		height: auto;
+
+ }
+
+.digital-head{
+    padding-top: 30px;
+    margin: 10px;
+    font-size: 14px;
+    font-family: banner;
+    font-weight: bold;	
+}
+#content{
+	    padding: 20px;
+    /*text-align: center;*/
+    width: 33%;
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: banner;
+    color: rgba(0,0,0,0.6);
+}
+
+.overflow-hidden::after{
+	content: "";
+	display: table;
+	clear: both;
+
+	}
+.col-md-7::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.col-md-7{
+	position: relative;
+	min-height: 500px;
+}
+
+.green-div{
+	position: absolute;
+	right:100px;
+	top:0;
+	background-color: #29f2a5;
+	width:2000px;
+	height:460px;
+	z-index:-1;
+
+}
+.content-img{
+	opacity: 0.8;
+	position: absolute;
+	width: 560px;
+	height: 350px;
+	right: 0;
+	top: 150px;
+	z-index: 1;
+}
+
+.div-text{
+	
+}
+
+.content-text{
+	
+	line-height: 60px;
+	font-size: 58px;
+	font-family: midtext;
+	z-index: 1;
+	
+}
+@font-face{
+	font-family: midtext;
+	src: url("Uberlin X-Bold.ttf");
+}
+
+.ideology-head{
+	
+	padding-top: 70px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: banner;
+	color:rgba(0,0,0,0.8);
+}
+.plus{
+	top: 40%;
+	left: 50px;
+	position: absolute;
+	width: 83%;
+	height: 45%;
+	background-image: url(images/1488286857_add-80px.png);
+	background-repeat: repeat;
+	opacity: 0.1;
+	z-index: -1;
+}
+
+.orange-plus{
+	
+	bottom: 0px;
+	left: 35%;
+	position: absolute;
+	width:20px;
+	height:20px;
+	background-image: url("images/orange-plus.png");
+	background-size: contain;
+	z-index: 1;
+	background-repeat: none;
+	}
+
+.idea-text{
+	position: absolute;
+	width: 50%;
+	height: auto;
+	font-size: 40px;
+	font-family: banner;
+	font-weight: bolder;
+}
