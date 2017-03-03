@@ -7,53 +7,169 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 
 <body>
-<div class="banner">
-<div id="overlay">
-<img src="images/unity.png" class="logo">
-<h1 id="banner-text">GREAT EXPERIENCES BUILD<br>GREAT BRANDS.</h1>
-<ul>
-<li><a href="#">HOME</a></li>
-<li><a href="#">ABOUT US</a></li>
-<li><a href="#">WHAT WE DO</a></li>
-<li><a href="#">MEET THE TEAM</a></li>
-<li><a href="#">OUR WORK</a></li>
-<li><a href="#">GET IN TOUCH</a></li>
-</ul>
-</div>
+
+<!-- banner section -->
+
+	<div class="banner">
+		<div id="overlay">
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-home"></span>HOME</a>
+  <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-user"></span>ABOUT US</a>
+  <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-folder-open"></span>WHAT WE DO</a>
+  <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-briefcase"></span>OUR WORK</a>
+  <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-send"></span>GET IN TOUCH</a>
+
+
 </div>
 
-<div class="digital-wrap">
-<h3 class="digital-head">DIGITAL CREATIVES</h1>
-<p id="content">We quickly bring ideas to life with tangible prototypes, and refine until the very last moment in close collaboration with other clients</p>
-</div>
+<script>
+    $(document).ready(function(){
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 50) {
+          $(".menu-phone").css("background-color", "rgba(0,0,0,0.9)"); 
+        } else {
+          $(".menu-phone").css("background-color", "transparent"); 
+        }
+      });
+    });
+</script>
 
-<div class="overflow-hidden">
+<span class="menu-phone" onclick="openNav()"><font style="color:white; padding-left:10px;""><span class="glyphicon glyphicon-menu-hamburger" style="padding:10px 0 0 10px; font-size: 18px;"></span></font></span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "220px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+			<img src="images/unity.png" class="logo">
+			<h1 id="banner-text">GREAT EXPERIENCES BUILD<br>GREAT BRANDS.</h1>
+			<ul class="menu-bar">
+				<li class="menu-list"><a class="menu-link" href="#">HOME</a></li>
+				<li class="menu-list"><a class="menu-link" href="#">ABOUT US</a></li>
+				<li class="menu-list"><a class="menu-link" href="#">WHAT WE DO</a></li>
+				<li class="menu-list"><a class="menu-link" href="#">MEET THE TEAM</a></li>
+				<li class="menu-list"><a class="menu-link" href="#">OUR WORK</a></li>
+				<li class="menu-list"><a class="menu-link" href="#">GET IN TOUCH</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="digital-wrap">
+		<h3 class="digital-head">DIGITAL CREATIVES</h3>
+		<p id="content">We quickly bring ideas to life with tangible prototypes, and refine until the very last moment in close collaboration with other clients</p>
+	</div>
+
+<!-- center content section -->
+
+	<div class="overflow-hidden">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-5 col5">
+					<div class="green-div"></div>
+					<img src="images/image.png" class="content-img">
+					<h4 class="idea-text">Ideas are easy to come by.Execution are really, really hard.</h4>
+				</div>
+
+		
+				<div class="col-md-7 col7">
+					<img src="images/circ-grey.png" class="circ-grey">
+					<img src="images/circ.png" class="circ">
+					<div class="div-text">
+						<h2 class="ideology-head">OUR IDEOLOGY</h2>
+					</div>
+					<div class="plus"></div>
+					<p class="content-text">LEARN > EXPERIMENT > FAIL > LEARN > EXPERIMENT ><font color="coral"> WIN</font></p>
+					<div class="orange-plus"></div>
+				</div>
+			</div>
+		</div>
+<!-- meet the team heading -->
+
 <div class="container">
-	<div class="row">
-		<div class="col-md-5">
-			<div class="green-div"></div>
-			<img src="images/image.png" class="content-img">
-			<h4 class="idea-text">Ideas are easy to come by.Execution are really, really hard.</h4>
+
+	<div class="team">
+		<img src="images/circ.png" id="circ">
+		<img src="images/tri-grey.png" id="tri1">
+
+		<div class="team-text">
+			<h5 id="team-text-head">MEET THE TEAM</h5>
 		</div>
 
-		
-		<div class="col-md-7">
-			
-			<div class="div-text"><h2 class="ideology-head">OUR IDEOLOGY</h2></div>
-			<div class="plus"></div>
-			<p class="content-text">LEARN > EXPERIMENT > FAIL > LEARN > EXPERIMENT ><font color="coral"> WIN</font></p>
-			<div class="orange-plus"></div>
-			
-		
+		<div class="team-tag">
+			<p class="team-tag-text">WE'RE A SMALL TEAM,<br> BUT HAVE A TON OF EXPERIENCE</p>
+		</div>
+
 	</div>
+
+<!-- meet the team photos --> 
+
+	<div class="row team-row"> 
+
+		<div class="col-md-4 col-sm-6 column">
+			<div class="col2">
+				<img src="images/t1.png" id="t2">
+				<div class="social-content">
+				<h3 id="t2-text"><b>David Smith</b> <br>Co-Founder, CEO</h3>
+				<span class="social-icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				</span>
+				</div>
+				</div>
+			</div>
+
+		<div class="col-md-4 col-sm-6 column">
+			<div class="col2">
+				<img src="images/t2.png" id="t2">
+				<div class="social-content">
+				<h3 id="t2-text"><b>David Smith</b> <br>Co-Founder, CEO</h3>
+				<span class="social-icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 col-sm-6 column">
+			<div class="col2">
+				<img src="images/t3.png" id="t2">
+				<div class="social-content">
+				<h3 id="t2-text"><b>David Smith</b> <br>Co-Founder, CEO</h3>
+				<span class="social-icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				
+				</span>
+				</div>
+			</div>
+		</div>
+	
 	</div>
 </div>
 
+<div class="container con2">
+<div class="orange-plus2"></div> 
+<div class="tri2"></div>
+	<div class="featured-work">
+		<h5 id="featured-work-head">OUR FEATURED WORK</h5>
+		<h2 id="featured-work-text">WE CREATE ENGAGING <br>EXPERIENCES THROUGH <br>CREATIVITY & CRAFT</h2>
+	</div>
+</div>
 
 </div>
 </body>

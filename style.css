@@ -1,13 +1,32 @@
 *{
 	margin: 0;
 	padding: 0;
+}
+
+body
+{
+	background-image: url("images/line.png");
+	background-repeat: repeat;
+	z-index: -2;
 }	
+
+.menu-phone{
+	font-size:30px;
+	cursor:pointer; 
+	display: none;
+}
+
+.sidenav{
+	display: none;
+}
+
 div.banner{
 	position: relative;
 	width: 100%;
 	height: 20%;
 	background-image: url("images/startup-photos.jpg");
 	background-size: cover;
+	background-position: center;
 	}
 #overlay{
 	width: 100%;
@@ -40,7 +59,7 @@ div.banner{
 	font-family: banner;
 	src: url("ARVIN/Arvin Light.ttf");
 }
-ul{
+.menu-bar{
 	width:100%;
 	position: absolute;
     list-style-type: none;
@@ -52,12 +71,12 @@ ul{
     background-color: transparent;
 }
 
-li {
+.menu-list{
 
    		display: inline-block;	
    }
 
-li a {
+.menu-link{
 	font-family: banner;
 	display: block;
     color: white;
@@ -66,7 +85,7 @@ li a {
     text-decoration: none;
 }
 
-li a::after {
+.menu-link::after {
     content: "";
     display: block;
     bottom: 4px;
@@ -76,18 +95,21 @@ li a::after {
     transition: width .3s;
     }
 
-li a:hover{
+.menu-link:hover{
 	text-decoration: none;
 	color: white;
+	font-weight: bold;
+	cursor: pointer;
 }
 
-li a:hover::after{
+.menu-link:hover::after{
 	width: 100%;
 	
 	
 }
  .digital-wrap{
  		padding: 20px 0px;
+ 		padding-bottom: 80px;
  		text-align: center;
  		width: 100%;
  		height: auto;
@@ -117,12 +139,17 @@ li a:hover::after{
 	clear: both;
 
 	}
-.col-md-7::after{
+
+.col5{
+	position: relative;
+	min-height: 540px;
+}
+.col7::after{
 	content: "";
 	display: table;
 	clear: both;
 }
-.col-md-7{
+.col7{
 	position: relative;
 	min-height: 500px;
 }
@@ -141,14 +168,10 @@ li a:hover::after{
 	opacity: 0.8;
 	position: absolute;
 	width: 560px;
-	height: 350px;
+	height: 390px;
 	right: 0;
 	top: 150px;
 	z-index: 1;
-}
-
-.div-text{
-	
 }
 
 .content-text{
@@ -174,21 +197,21 @@ li a:hover::after{
 	color:rgba(0,0,0,0.8);
 }
 .plus{
-	top: 40%;
+	top: 42%;
 	left: 50px;
 	position: absolute;
-	width: 83%;
-	height: 45%;
+	width: 84%;
+	height: 40%;
 	background-image: url(images/1488286857_add-80px.png);
 	background-repeat: repeat;
-	opacity: 0.1;
+	opacity: 0.3;
 	z-index: -1;
 }
 
 .orange-plus{
 	
 	bottom: 0px;
-	left: 35%;
+	left: 30%;
 	position: absolute;
 	width:20px;
 	height:20px;
@@ -202,7 +225,632 @@ li a:hover::after{
 	position: absolute;
 	width: 50%;
 	height: auto;
-	font-size: 40px;
-	font-family: banner;
+	bottom:0;
+	right: 20px;
+	font-size: 36px;
+	line-height: 42px;
+	font-family: league;
 	font-weight: bolder;
+	z-index: 2;
+}
+@font-face {
+	font-family: league;
+	src:url("leaguespartan-bold.ttf");
+}
+
+
+.circ-grey{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	opacity: 0.3;
+	top: -40px;
+	left: 100px;
+}
+
+.circ{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 30px;
+	right: 100px;
+}
+.team-text{
+			width: 100%;
+}
+
+.container{
+	position: relative;
+}
+.team{
+	width: 100%;
+	padding: 100px 0px 40px 140px;
+}
+
+#team-text-head{
+	font-family:banner;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.team-tag-text{
+	font-family: midtext;
+	font-size:58px;
+	line-height: 60px;
+}
+
+#circ{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 155px;
+	left: 80px; 
+
+}
+
+#tri1{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 110px;
+	right: 25%; 
+	opacity: 0.4;
+
+}
+
+/*meet the team photos*/
+
+.team-row{
+
+	margin-right: 140px;
+	margin-left: 140px;
+}
+
+.column{
+
+	/*position: relative;*/
+}
+
+.col2:hover{
+	background-color: #29f2a5;
+	width: 240px;
+	height: 130px;
+	transition:0.5s;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+
+}
+
+#t2{
+	float: left;
+	width: 130px;
+    height: 130px;
+    padding: 20px;
+    margin: auto 0;
+}
+
+.social-content{
+	float: left;
+}
+
+#t2-text{
+
+	/*float: right;*/
+	font-size:14px;
+	top: 10px;
+	right: 50px;
+	font-family: banner;
+	line-height: 20px;
+}
+
+.featured-work{
+	position: relative;
+	text-align: center;
+	padding-top:100px;
+}
+
+#featured-work-head{
+	
+	font-family: banner;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#featured-work-text{
+
+	font-family: midtext;
+	font-size:58px;
+	line-height: 60px;
+}
+
+.orange-plus2{
+
+	position: absolute;
+	right: 29%;
+	top: 30%;
+	width:20px;
+	height:20px;
+	background-image: url("images/orange-plus.png");
+	background-size: contain;
+	z-index: 1;
+	background-repeat: none;
+}
+
+.tri2{
+
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-image: url("images/tri.png");
+	background-size: contain;
+    left: 13%;
+    top: 64%;
+    z-index:-2;
+}
+
+.fa{
+
+	font-size: 22px;
+	padding-right: 10px;
+}
+
+
+/*desktop mode media query*/
+
+
+
+
+
+
+
+/*small sized desktop mode*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+ .team-tag-text{
+ 	font-size: 42px;
+ 	width: 100%;
+ 	line-height: 50px;
+ }
+ #circ{
+ 	top:100px;
+ 	left:20px;
+ }
+
+#tri1{
+	top:0;
+}
+
+ #content{
+ 	font-size: 24px;
+ 	width: 80%;
+
+ }
+
+ .content-text{
+ 	font-size: 48px;
+ 	line-height: 50px;
+ 	 }
+
+.team{
+	    padding: 30px 0px 40px 60px;
+}
+
+.content-img{
+	
+	top: 100px;
+}
+
+.col5{
+	min-height:490px;
+}
+
+.ideology-head{
+
+	padding-bottom: 0px;
+}
+
+.plus{
+	/*width: 60%;
+	height: 30%;*/
+	/*top:30%;*/
+}
+
+.circ-grey{
+
+	top:-20px;
+}
+
+.digital-head{
+
+	padding-top: 10px;
+}
+
+.digital-wrap{
+	padding-bottom: 10px;
+}
+
+.col7{
+
+min-height: 300px;
+}
+
+#banner-text{
+	font-size: 20px;
+}
+
+#featured-work-text{
+
+	font-size: 48px;
+	line-height: 50px;
+
+}
+
+.featured-work{
+
+	padding-top: 50px;
+
+}
+
+.tri2{
+	top:60%;
+	left: 5%;
+}
+
+.orange-plus2{
+
+	top: 20%;
+	right: 20%;
+}
+
+.column{
+	width: 100%;
+	padding: 0 25%;
+	clear: both;
+	text-align: center;
+}
+.col2{
+	float:left;
+	width: 100%;
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+.col2:hover{
+
+	width: 100%;
+	height: 130px;
+
+}
+
+.team-row{
+margin:0 auto;
+}
+
+.idea-text{
+
+	font-size: 32px;
+	line-height: 30px;
+}
+
+}
+
+
+
+
+
+/*tab mode media query*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+ .team-tag-text{
+ 	font-size: 36px;
+ 	width: 100%;
+ 	line-height: 40px;
+ }
+ #circ{
+ 	top:100px;
+ 	left:20px;
+ }
+
+#tri1{
+	top:0;
+}
+
+ #content{
+ 	width: 80%;
+
+ }
+
+ .content-text{
+ 	font-size: 42px;
+ 	line-height: 40px;
+ 	 }
+
+.team{
+	    padding: 30px 0px 40px 60px;
+}
+
+.content-img{
+	
+	top: 100px;
+}
+
+.col5{
+	min-height:490px;
+}
+
+.ideology-head{
+
+	padding-bottom: 0px;
+}
+
+.circ-grey{
+
+	top:-20px;
+}
+
+.digital-head{
+
+	padding-top: 10px;
+}
+
+.digital-wrap{
+	padding-bottom: 10px;
+}
+
+.col7{
+
+min-height: 300px;
+}
+
+#banner-text{
+	font-size: 20px;
+}
+
+#featured-work-text{
+
+	font-size: 42px;
+	line-height: 40px;
+
+}
+
+.featured-work{
+
+	padding-top: 50px;
+
+}
+
+.tri2{
+	top:60%;
+	left: 5%;
+}
+
+.orange-plus2{
+
+	top: 20%;
+	right: 20%;
+}
+
+.column{
+	width: 100%;
+	padding: 0 25%;
+	clear: both;
+	text-align: center;
+}
+.col2{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.col2:hover{
+
+	width: 100%;
+	height: 130px;
+
+}
+
+.team-row{
+margin:0 auto;
+}
+
+
+}
+
+
+/*mobile phone mode media query*/
+
+ @media only screen and (min-width: 320px) and (max-width: 479px){
+
+ .team-tag-text{
+ 	font-size: 24px;
+ 	width: 100%;
+ 	line-height: 30px;
+ }
+ #circ{
+ 	top:100px;
+ 	left:20px;
+ }
+
+.circ{
+	width:60px;
+	height: 60px;
+	right: 10px;
+}
+ .circ-grey{
+
+ 	width: 100px;
+ 	height: 100px;
+ }
+
+#tri1{
+	top:0;
+}
+
+ #content{
+ 	width: 80%;
+ 	font-size: 16px;
+
+ }
+
+ .content-text{
+ 	font-size: 28px;
+ 	line-height: 30px;
+ 	 }
+
+.team{
+	    padding: 30px 0px 40px 60px;
+}
+
+.content-img{
+	
+	top: 100px;
+}
+
+.col5{
+	min-height:490px;
+}
+
+.ideology-head{
+
+	padding-bottom: 0px;
+}
+
+.idea-text{
+	font-size: 27px;
+	line-height: 30px;
+}
+
+.circ-grey{
+
+	top:-20px;
+}
+
+.digital-head{
+
+	padding-top: 10px;
+}
+
+.digital-wrap{
+	padding-bottom: 10px;
+}
+
+.col7{
+
+min-height: 300px;
+}
+
+#banner-text{
+	font-size: 18px;
+}
+
+#featured-work-text{
+
+	font-size: 28px;
+	line-height: 30px;
+
+}
+
+.featured-work{
+
+	padding-top: 50px;
+
+}
+
+.tri2{
+	top:60%;
+	left: 5%;
+}
+
+.orange-plus2{
+
+	top: 20%;
+	right: 20%;
+}
+
+.column{
+	width: 100%;
+	padding: 0 10%;
+	clear: both;
+	text-align: center;
+}
+.col2{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.col2:hover{
+
+	width: 100%;
+	height: 130px;
+
+}
+
+.team-row{
+margin:0 auto;
+}
+
+.menu-bar{
+	display: none;
+}
+
+.menu-list{
+	display: none;
+}
+
+.menu-phone{
+	display: block;
+	position: fixed;
+	width: 100%;
+	
+	z-index: 9;
+}
+.sidenav {
+	display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 100px;
+
+}
+
+.glyphicon{
+
+	padding-right: 10px;
+	font-size: 14px;
+}
+
+.sidenav .menu-phone-link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .menu-phone-link:hover, .offcanvas .menu-phone-link:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	color: white;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+/*@media screen and (max-height: 479px) {
+  .sidenav {padding-top: 100px;}
+  .sidenav .menu-phone-link {font-size: 18px;}
+}*/
+
 }
