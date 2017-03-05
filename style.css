@@ -27,7 +27,7 @@ div.banner{
 	height: 20%;
 	background-image: url("images/startup-photos.jpg");
 	background-size: cover;
-	background-position: center;
+	/*background-position: center;*/
 	}
 #overlay{
 	width: 100%;
@@ -41,11 +41,12 @@ div.banner{
 	letter-spacing: 6px;
 	transform: translate(-50%,-50%);
 	color: white;
-	font-family: banner;
+	font-family:poppins-regular;
 	text-align: center;
 	vertical-align: center;
 	margin: 0;
-	font-size: 28px;
+	font-size: 26px;
+
 }
 .logo{
 		
@@ -57,8 +58,8 @@ div.banner{
 }
 
 @font-face{
-	font-family: banner;
-	src: url("ARVIN/Arvin Light.ttf");
+	font-family:poppins-regular;
+	src: url("Poppins-Regular.ttf");
 }
 .menu-bar{
 	width:100%;
@@ -78,12 +79,18 @@ div.banner{
    }
 
 .menu-link{
-	font-family: banner;
+	font-family: poppins-light;
 	display: block;
     color: white;
     text-align: center;
     padding: 14px 18px;
     text-decoration: none;
+}
+
+@font-face{
+
+	font-family: poppins-light;
+	src:url("Poppins-Light.ttf");
 }
 
 .menu-link::after {
@@ -99,16 +106,18 @@ div.banner{
 .menu-link:hover{
 	text-decoration: none;
 	color: white;
-	font-weight: bold;
+	font-weight: bolder;
 	cursor: pointer;
 }
 
 .menu-link:hover::after{
 	width: 100%;
-	
+	color: white;
+	text-decoration: none;
 	
 }
- .digital-wrap{
+
+.digital-wrap{
  		padding: 20px 0px;
  		padding-bottom: 80px;
  		text-align: center;
@@ -120,17 +129,28 @@ div.banner{
 .digital-head{
     padding-top: 30px;
     margin: 10px;
-    font-size: 14px;
-    font-family: banner;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-family: poppins-semi;
     font-weight: bold;	
+    letter-spacing: 3px;
 }
+
+@font-face{
+
+font-family: poppins-semi;
+src:url("Poppins-SemiBold.ttf");
+
+
+}
+
 #content{
 	padding: 20px;
-    width: 33%;
+    width: 45%;
     margin: 0 auto;
     font-size: 24px;
-    font-family: banner;
-    color: rgba(0,0,0,0.6);
+    font-family: poppins-light;
+    color: rgba(0,0,0,0.5);
 }
 
 .overflow-hidden::after{
@@ -165,7 +185,7 @@ div.banner{
 
 }
 .content-img{
-	opacity: 0.8;
+	opacity: 0.7;
 	position: absolute;
 	width: 560px;
 	height: 390px;
@@ -178,22 +198,23 @@ div.banner{
 	
 	line-height: 60px;
 	font-size: 58px;
-	font-family: midtext;
+	font-family: poppins-bold;
 	z-index: 1;
 	
 }
 @font-face{
-	font-family: midtext;
-	src: url("Uberlin X-Bold.ttf");
+	font-family: poppins-bold;
+	src: url("Poppins-Bold.ttf");
 }
 
 .ideology-head{
 	
 	padding-top: 70px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	font-weight: bold;
-	font-size: 14px;
-	font-family: banner;
+	font-size: 12px;
+	letter-spacing: 3px;
+	font-family: poppins-semi;
 	color:rgba(0,0,0,0.8);
 }
 .plus{
@@ -229,13 +250,13 @@ div.banner{
 	right: 20px;
 	font-size: 36px;
 	line-height: 42px;
-	font-family: league;
+	font-family: poppins-semi ;
 	font-weight: bolder;
 	z-index: 2;
 }
 @font-face {
-	font-family: league;
-	src:url("leaguespartan-bold.ttf");
+	font-family: poppins-semi;
+	src:url("Poppins-SemiBold.ttf");
 }
 
 
@@ -268,13 +289,14 @@ div.banner{
 }
 
 #team-text-head{
-	font-family:banner;
-	font-size: 14px;
-	font-weight: bold;
+	font-family:poppins-semi;
+	font-size: 12px;
+	letter-spacing: 3px;
+	
 }
 
 .team-tag-text{
-	font-family: midtext;
+	font-family: poppins-bold;
 	font-size:58px;
 	line-height: 60px;
 }
@@ -313,11 +335,10 @@ div.banner{
 
 .col2:hover{
 	background-color: #29f2a5;
-	width: 240px;
+	width: 100%;
 	height: 130px;
 	transition:0.5s;
 	color: white;
-	font-weight: bolder;
 	cursor: pointer;
 
 }
@@ -337,10 +358,10 @@ div.banner{
 #t2-text{
 
 	/*float: right;*/
-	font-size:14px;
+	font-size:12px;
 	top: 10px;
 	right: 50px;
-	font-family: banner;
+	font-family:poppins-regular;
 	line-height: 20px;
 }
 
@@ -352,16 +373,18 @@ div.banner{
 
 #featured-work-head{
 	
-	font-family: banner;
-	font-size: 14px;
-	font-weight: bold;
+	font-family:poppins-semi;
+	font-size: 12px;
+	letter-spacing: 3px;
+	
 }
 
 #featured-work-text{
 
-	font-family: midtext;
+	font-family: poppins-bold;
 	font-size:58px;
 	line-height: 60px;
+	padding-bottom: 40px;
 }
 
 .orange-plus2{
@@ -391,17 +414,42 @@ div.banner{
 
 .fa{
 
-	font-size: 22px;
 	padding-right: 10px;
+	font-size: 10px;
 }
 
-
+hr{
+	margin-top: 80px;
+	
+}
 /*desktop mode media query*/
 
 
+@media only screen and (min-width: 992px) and (max-width: 1199px){
 
+.col2{
+	float:left;
+	width: 100%;
+	/*margin: 0 auto;*/
+	/*text-align: center;*/
+}
+.col2:hover{
 
+	width: 100%;
+	height: 130px;
 
+}
+
+.team-row{
+margin:0 60px;
+}
+
+.idea-text{
+
+	font-size: 34px;
+	line-height: 35px;
+}
+}
 
 
 /*small sized desktop mode*/
@@ -528,8 +576,8 @@ margin:0 auto;
 }
 
 .idea-text{
-
-	font-size: 32px;
+	width: 35%;
+	font-size: 34px;
 	line-height: 30px;
 }
 
@@ -834,7 +882,7 @@ margin:0 auto;
     display: block;
     transition: 0.3s;
     font-weight: bold;
-    font-family: banner;
+    font-family:poppins-regular;
 }
 
 
