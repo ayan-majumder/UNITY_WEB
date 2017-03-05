@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Unity</title>
+	<title>UNITY</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 
@@ -18,6 +20,9 @@
 
 	<div class="banner">
 		<div id="overlay">
+
+<!-- mobile sidenav menubar -->
+
 		<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-home"></span>HOME</a>
@@ -41,7 +46,13 @@
     });
 </script>
 
-<span class="menu-phone" onclick="openNav()"><font style="color:white; padding-left:10px;""><span class="glyphicon glyphicon-menu-hamburger" style="padding:10px 0 0 10px; font-size: 18px;"></span></font></span>
+<span class="menu-phone" style="color: white;">
+<span class="glyphicon glyphicon-menu-hamburger" onclick="openNav()" style="padding:10px 0 0 10px; font-size: 18px;"></span>
+<span class="glyphicon glyphicon-home" style="float: right; padding: 10px 10px 0 0; font size: 20px;"></span>
+
+<span class="glyphicon glyphicon-search" style="float: right; padding: 10px 10px 0 0; font size: 20px;">
+</span>
+</span>
 
 <script>
 function openNav() {
@@ -52,6 +63,9 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+<!-- end of menu bar -->
+
 			<img src="images/unity.png" class="logo">
 			<h1 id="banner-text">GREAT EXPERIENCES BUILD<br>GREAT BRANDS.</h1>
 			<ul class="menu-bar">
@@ -69,6 +83,8 @@ function closeNav() {
 		<h3 class="digital-head">DIGITAL CREATIVES</h3>
 		<p id="content">We quickly bring ideas to life with tangible prototypes, and refine until the very last moment in close collaboration with other clients</p>
 	</div>
+
+	<!-- end of banner -->
 
 <!-- center content section -->
 
@@ -95,6 +111,8 @@ function closeNav() {
 				</div>
 			</div>
 		</div>
+<!-- end of center content -->
+
 <!-- meet the team heading -->
 
 <div class="container">
@@ -162,6 +180,10 @@ function closeNav() {
 	</div>
 </div>
 
+<!-- end of meet the team -->
+
+<!-- featued work section -->
+
 <div class="container con2">
 <div class="orange-plus2"></div> 
 <div class="tri2"></div>
@@ -170,7 +192,78 @@ function closeNav() {
 		<h2 id="featured-work-text">WE CREATE ENGAGING <br>EXPERIENCES THROUGH <br>CREATIVITY & CRAFT</h2>
 	</div>
 </div>
+<!-- end of featured work -->
 
+<!-- image slider -->
+
+<div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div id="imageCarousel" class="carousel slide" data-interval="2000"
+                     data-ride="carousel" data-pause="hover" data-wrap="true">
+
+                    <ol class="carousel-indicators" style="z-index: 1;">
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                       
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="images/starfish.jpg" class="img-responsive">
+                                  </div>
+                                <div class="col-xs-4">
+                                    <img src="images/cycle.png" class="img-responsive">
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="images/air.jpg" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="images/fedx.png" class="img-responsive">
+                                   
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="images/rock.jpg" class="img-responsive">
+                                  
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="images/bulb.png" class="img-responsive">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#imageCarousel" class="carousel-control right" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- end of image slide -->
+
+<!-- footer section -->
+<hr>
+
+
+
+<!-- end of footer section -->
+
+<!-- end of main overflow-->
 </div>
 </body>
 </html>

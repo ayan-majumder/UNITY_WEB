@@ -8,6 +8,7 @@ body
 	background-image: url("images/line.png");
 	background-repeat: repeat;
 	z-index: -2;
+	background-position: center;
 }	
 
 .menu-phone{
@@ -124,8 +125,7 @@ div.banner{
     font-weight: bold;	
 }
 #content{
-	    padding: 20px;
-    /*text-align: center;*/
+	padding: 20px;
     width: 33%;
     margin: 0 auto;
     font-size: 24px;
@@ -741,7 +741,7 @@ min-height: 300px;
 }
 
 #banner-text{
-	font-size: 18px;
+	font-size: 24px;
 }
 
 #featured-work-text{
@@ -833,7 +833,10 @@ margin:0 auto;
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-weight: bold;
+    font-family: banner;
 }
+
 
 .sidenav .menu-phone-link:hover, .offcanvas .menu-phone-link:focus{
     color: #f1f1f1;
@@ -848,9 +851,5 @@ margin:0 auto;
     margin-left: 50px;
 }
 
-/*@media screen and (max-height: 479px) {
-  .sidenav {padding-top: 100px;}
-  .sidenav .menu-phone-link {font-size: 18px;}
-}*/
 
 }
