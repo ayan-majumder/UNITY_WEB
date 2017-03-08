@@ -27,7 +27,6 @@ div.banner{
 	height: 20%;
 	background-image: url("images/startup-photos.jpg");
 	background-size: cover;
-	/*background-position: center;*/
 	}
 #overlay{
 	width: 100%;
@@ -54,7 +53,7 @@ div.banner{
 		width: 120px;
 		height: 60px;
 		top: 5%;
-		left: 20%;
+		left: 18%;
 }
 
 @font-face{
@@ -218,28 +217,27 @@ src:url("Poppins-SemiBold.ttf");
 	color:rgba(0,0,0,0.8);
 }
 .plus{
-	top: 42%;
-	left: 50px;
+	top: 40%;
+	left: 40px;
 	position: absolute;
 	width: 84%;
 	height: 40%;
 	background-image: url(images/1488286857_add-80px.png);
 	background-repeat: repeat;
-	opacity: 0.3;
+	opacity: 0.1;
 	z-index: -1;
 }
 
 .orange-plus{
 	
-	bottom: 0px;
+	bottom: -10px;
 	left: 30%;
+	font-size: 42px;
+	font-family: poppins-light;
+	font-weight: bold;
+	color: coral;
 	position: absolute;
-	width:20px;
-	height:20px;
-	background-image: url("images/orange-plus.png");
-	background-size: contain;
-	z-index: 1;
-	background-repeat: none;
+
 	}
 
 .idea-text{
@@ -265,8 +263,8 @@ src:url("Poppins-SemiBold.ttf");
 	width: 150px;
 	height: 150px;
 	opacity: 0.3;
-	top: -40px;
-	left: 100px;
+	top: -60px;
+	left: 160px;
 }
 
 .circ{
@@ -330,8 +328,21 @@ src:url("Poppins-SemiBold.ttf");
 
 .column{
 
-	/*position: relative;*/
+	position: relative;
 }
+
+#line:before{
+content:"";
+position:absolute;
+border-top:1px solid rgba(0,0,0,0.1);
+width:160px;
+transform: rotate(-45deg);
+transform-origin: 0% 0%;
+z-index: -1;
+top: 110px;
+left:10px;
+}
+
 
 .col2:hover{
 	background-color: #29f2a5;
@@ -391,13 +402,12 @@ src:url("Poppins-SemiBold.ttf");
 
 	position: absolute;
 	right: 29%;
-	top: 30%;
-	width:20px;
-	height:20px;
-	background-image: url("images/orange-plus.png");
-	background-size: contain;
-	z-index: 1;
-	background-repeat: none;
+	top: 20%;
+	font-size: 40px;
+	color: coral;
+	font-family: poppins-light;
+	font-weight: bold;
+	
 }
 
 .tri2{
@@ -434,14 +444,35 @@ hr{
 .center .slick-slide img {
 	width: 100%;
 }
+.slick-next:before{
+
+	display:none;
+	}
+.slick-prev:before{
+
+	display:none;
+	}
+
 .center .slick-next{
 
+	background-image: url("images/right.png");
+	width: 96px;
+	height: 96px;
 	right: 0px;
+	z-index: 1;
 }
 .center .slick-prev {
     left: 0px;
-    z-index: 1;
+    background-image: url("images/left.png");
+    width: 96px;
+	height: 96px;
+	z-index: 1;
 }
+
+.slick-next:before{
+
+	display:none;
+	}
 
 
 .footer-text{
@@ -476,9 +507,9 @@ hr{
 
 .footer{
 	float: left;
-	width:75%;
+	width:100%;
 	height: auto;
-	padding-left: 20%;
+	
 	margin: 0;
 	/*margin: 0 auto;*/
 }
@@ -522,6 +553,11 @@ hr{
 	font-size: 10px;
 	font-family: poppins-regular;
 	padding-top: 20px;
+}
+
+.footer-row{
+
+	padding-bottom: 20px;
 }
 
 /*desktop mode media query*/
@@ -601,12 +637,6 @@ margin:0 60px;
 	padding-bottom: 0px;
 }
 
-.plus{
-	/*width: 60%;
-	height: 30%;*/
-	/*top:30%;*/
-}
-
 .circ-grey{
 
 	top:-20px;
@@ -655,10 +685,10 @@ min-height: 300px;
 }
 
 .column{
-	width: 100%;
-	padding: 0 25%;
-	clear: both;
+	width: 33%;
+	padding: 0;
 	text-align: center;
+	float: left;
 }
 .col2{
 	float:left;
@@ -681,6 +711,13 @@ margin:0 auto;
 	width: 35%;
 	font-size: 34px;
 	line-height: 30px;
+}
+
+.center .slick-prev, .center .slick-next{
+
+	width: 60px;
+	height: 60px;
+	background-size: cover;
 }
 
 }
@@ -774,21 +811,17 @@ min-height: 300px;
 
 .orange-plus2{
 
-	top: 20%;
+	top: 13%;
 	right: 20%;
 }
 
 .column{
 	width: 100%;
-	padding: 0 25%;
+	padding: 0 15%;
 	clear: both;
 	text-align: center;
 }
-.col2{
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-}
+
 .col2:hover{
 
 	width: 100%;
@@ -799,11 +832,124 @@ min-height: 300px;
 .team-row{
 margin:0 auto;
 }
+
+#t2-text{
+
+font-size: 16px; 
+}
+
+#t2{
+padding: 10px;
+margin-right: 10%;
+}
+
+.social-icons >.fa{
+
+	font-size: 24px;
+}
+
+.menu-bar{
+	display: none;
+}
+
+.menu-list{
+	display: none;
+}
+
+.menu-phone{
+	display: block;
+	position: fixed;
+	width: 100%;
+	
+	z-index: 9;
+}
+.sidenav {
+	display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 100px;
+
+}
+
+.glyphicon{
+
+	font-size: 14px;
+}
+
+.sidenav .glyphicon
+{
+	padding-right: 10px;
+}
+
+
+.sidenav .menu-phone-link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+    font-family:poppins-regular;
+}
+
+
+.sidenav .menu-phone-link:hover, .offcanvas .menu-phone-link:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	color: white;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+
+.center .slick-prev, .center .slick-next{
+
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+}
+
+
+
+hr{
+
+	margin-top: 35px;
+}
+.footer {
+    float: left;
+    width: 61%;
+    height: auto;
+    margin: 0;
+    padding-left: 10px;
+}
+.footer-text{
+	padding-top: 0;
+}
 .footer-icons-div{
  
  	float: left;
-	width: 100%;
+	width: 31%;
 	text-align: center;
+}
+
+.footer-link{
+	    padding: 7px 14px;
+}
+.footer-cont{
+	    padding-bottom: 20px;
 }
 
 }
@@ -832,6 +978,7 @@ margin:0 auto;
 
  	width: 100px;
  	height: 100px;
+ 	top: -10px;
  }
 
 #tri1{
@@ -870,11 +1017,6 @@ margin:0 auto;
 .idea-text{
 	font-size: 27px;
 	line-height: 30px;
-}
-
-.circ-grey{
-
-	top:-20px;
 }
 
 .digital-head{
@@ -973,8 +1115,12 @@ margin:0 auto;
 
 .glyphicon{
 
-	padding-right: 10px;
 	font-size: 14px;
+}
+
+.sidenav .glyphicon
+{
+	padding-right: 10px;
 }
 
 .sidenav .menu-phone-link {
@@ -1002,6 +1148,13 @@ margin:0 auto;
     margin-left: 50px;
 }
 
+.center .slick-prev, .center .slick-next{
+
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+}
+
 .footer-icons-div{
  
  	float: left;
@@ -1010,13 +1163,13 @@ margin:0 auto;
 }
  .footer-menu{
 
- 	width: 70%;
+ 	width: 100%;
     /* position: absolute; */
     /* list-style-type: none; */
     /* bottom: 2%; */
     text-align: center;
-    margin-left: 40px;
-    padding: 0;
+    padding-bottom: 20px;
+
     overflow: hidden;
     background-color: transparent;
  }
@@ -1027,6 +1180,7 @@ padding: 4px 14px;
 
 .footer-text{
 	    text-align: center;
+	    width: 100%;
 }
 
 #footer-img{
@@ -1038,5 +1192,11 @@ padding: 4px 14px;
 
 .footer-cont{
 	padding: 0;
+}
+
+.footer-small{
+
+	width: 100%;
+	text-align: center;
 }
 }
