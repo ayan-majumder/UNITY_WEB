@@ -22,13 +22,15 @@ body
 }
 
 div.banner{
+	padding: 0;
 	position: relative;
 	width: 100%;
 	height: 20%;
 	background-image: url("images/startup-photos.jpg");
 	background-size: cover;
 	}
-#overlay{
+.overlay{
+	margin: 0;
 	width: 100%;
 	height: 500px;
 	background-color: rgba(0,0,0,0.5);
@@ -558,8 +560,16 @@ hr{
 	padding-top: 20px;
 }
 
+.home,.search{
+
+	float: right; 
+	padding: 10px 10px 0 0; 
+	font size: 20px;
+}
+
 .footer-row{
 
+	padding: 0 60px;
 	padding-bottom: 30px;
 }
 
@@ -724,6 +734,13 @@ margin:0 auto;
 	background-size: cover;
 }
 
+.footer-link{
+	padding: 7px 14px;
+}
+.footer-text{
+
+	padding: 0 0 0 10px;
+}
 }
 
 /*tab mode media query*/
@@ -1067,7 +1084,7 @@ min-height: 300px;
 
 .column{
 	width: 100%;
-	padding: 0 10%;
+	padding: 0 9%;
 	clear: both;
 	text-align: center;
 }
@@ -1081,6 +1098,11 @@ min-height: 300px;
 	width: 100%;
 	height: 130px;
 
+}
+
+.social-icons .fa{
+
+	font-size: 16px;
 }
 
 .team-row{
