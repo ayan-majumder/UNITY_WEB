@@ -457,16 +457,18 @@ hr{
 .center .slick-next{
 
 	background-image: url("images/right.png");
-	width: 96px;
-	height: 96px;
+	width: 60px;
+	height: 60px;
+	background-size: cover;
 	right: 0px;
 	z-index: 1;
 }
 .center .slick-prev {
     left: 0px;
     background-image: url("images/left.png");
-    width: 96px;
-	height: 96px;
+    width: 60px;
+	height: 60px;
+	background-size: cover;
 	z-index: 1;
 }
 
