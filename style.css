@@ -148,9 +148,9 @@ src:url("Poppins-SemiBold.ttf");
 
 #content{
 	padding: 20px;
-    width: 45%;
+    width: 40%;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 22px;
     font-family: poppins-light;
     color: rgba(0,0,0,0.5);
 }
