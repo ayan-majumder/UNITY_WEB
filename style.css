@@ -25,12 +25,12 @@ div.banner{
 	padding: 0;
 	position: relative;
 	width: 100%;
-	
 	background-image: url("images/startup-photos.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	background-position-y: -65px;
+	background-repeat: none;
+	/*background-position-y: -65px;*/
 	}
 .overlay{
 	margin: 0;
@@ -768,7 +768,7 @@ margin:0 auto;
 
 .overlay{
 
-	height: 368px;
+	height: 330px;
 }
 
 #banner-text{
@@ -1011,7 +1011,9 @@ hr{
 
 .overlay{
 
-	height: 368px;
+	height: 330px;
+	background-position: cover;
+	background-repeat: none;
 }
 
 #banner-text{
