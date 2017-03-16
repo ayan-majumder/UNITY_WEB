@@ -130,6 +130,12 @@ div.banner{
 	cursor: pointer;
 }
 
+.menu-link:focus{
+	text-decoration: none;
+	color: white;
+	outline: inherit;
+}
+
 .menu-link:hover::after{
 	width: 100%;
 	color: white;
@@ -579,18 +585,13 @@ hr{
 	padding-top: 20px;
 }
 
-.home,.search{
-
-	float: right; 
-	padding: 10px 10px 0 0; 
-	font size: 20px;
-}
 
 .footer-row{
 
 	padding: 0 60px;
 	padding-bottom: 30px;
 }
+
 
 
 /*desktop mode media query*/
