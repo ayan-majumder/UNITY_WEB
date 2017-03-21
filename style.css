@@ -140,6 +140,7 @@ div.banner{
 	top: 50%;
 	left: 50%;
 	letter-spacing: 6px;
+	-webkit-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 	color: white;
 	font-family:poppins-regular;
@@ -236,6 +237,7 @@ content: "";
 
 	font-family: poppins-light;
 	src:url("Poppins-Light.ttf");
+	font-weight: normal;
 }
 
 .menu-link::after {
@@ -251,7 +253,6 @@ content: "";
 .menu-link:hover{
 	text-decoration: none;
 	color: white;
-	font-weight: bolder;
 	cursor: pointer;
 }
 
