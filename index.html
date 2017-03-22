@@ -29,11 +29,60 @@
 
 <body>
 
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$(window).load(function(){
+				$('#preloader').fadeOut('slow',function(){$(this).remove();});
+				$('#pre').fadeOut('slow',function(){$(this).remove();});
+				
+			});
+		});
+	</script>
 
 <div id="pre" style="width: 100%; height: 100%; background-color: white; z-index: 888; background-position: center; position: fixed;">
 <div id='preloader'></div></div>
    
 
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "220px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 <!-- banner section -->
 <!-- <div id="after-load" style="display: none;"> -->
 	<div class="container banner">
@@ -48,8 +97,6 @@
   <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-folder-open"></span>WHAT WE DO</a>
   <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-briefcase"></span>OUR WORK</a>
   <a class="menu-phone-link" href="#"><span class="glyphicon glyphicon-send"></span>GET IN TOUCH</a>
-
-
 </div>
 
 
@@ -58,7 +105,17 @@
 
 </span>
 
-
+<script>
+    $(document).ready(function(){
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 50) {
+          $(".menu-phone").css("background-color", "rgba(0,0,0,0.9)"); 
+        } else {
+          $(".menu-phone").css("background-color", "transparent"); 
+        }
+      });
+    });
+</script>
 <!-- end of menu bar -->
 
 			<img src="images/unity.png" class="logo">
@@ -74,6 +131,21 @@
 		
 	</div>
 </div>
+
+
+<script type="text/javascript" src="WOW-master/dist/wow.js"></script>
+
+<script>
+wow = new WOW(
+{
+boxClass:'wow',
+animateClass:'animated',
+offset:100
+});
+wow.init();
+
+</script>
+
 	<div class="digital-wrap wow fadeInDown">
 		<h3 class="digital-head">DIGITAL CREATIVES</h3>
 		<p id="content">We quickly bring ideas to life with tangible prototypes, and refine until the very last moment in close collaboration with our clients</p>
@@ -89,14 +161,14 @@
 
 				<div class="col-md-5 col5">
 					<div class="green-div"></div>
-					<img src="images/image.jpg" class="content-img" alt="idea-img">
+					<img src="images/image.jpg" class="content-img">
 					<h4 class="idea-text">Ideas are easy to come by.Execution are really, really hard.</h4>
 				</div>
 
 		
 				<div class="col-md-7 col7">
-					<img src="images/circ-grey.png" class="circ-grey" alt="grey-circ">
-					<img src="images/circ.png" class="circ" alt="circle">
+					<img src="images/circ-grey.png" class="circ-grey">
+					<img src="images/circ.png" class="circ">
 					<div class="div-text">
 						<h2 class="ideology-head">OUR IDEOLOGY</h2>
 					</div>
@@ -113,8 +185,8 @@
 <div class="container wow fadeInDown" data-wow-delay=".5s">
 
 	<div class="team">
-		<img src="images/circ.png" id="circ" alt="circle">
-		<img src="images/tri-grey.png" id="tri1" alt="grey-tri">
+		<img src="images/circ.png" id="circ">
+		<img src="images/tri-grey.png" id="tri1">
 
 		<div class="team-text">
 			<h5 id="team-text-head">MEET THE TEAM</h5>
@@ -133,7 +205,7 @@
 		<div class="col-md-4 column">
 		<div id="line"></div>
 			<div class="col2">
-				<img src="images/t1.png" class="t2" alt="t1-img">
+				<img src="images/t1.png" class="t2">
 				<div class="social-content">
 				<h3 class="t2-text"><b>David Smith</b> <br>Co-Founder, CEO</h3>
 				<span class="social-icons">
@@ -147,7 +219,7 @@
 
 		<div class="col-md-4 column">
 			<div class="col2">
-				<img src="images/t2.png" class="t2" alt="t2-img">
+				<img src="images/t2.png" class="t2">
 				<div class="social-content">
 				<h3 class="t2-text"><b>David Smith</b> <br>Co-Founder, CEO</h3>
 				<span class="social-icons">
@@ -161,7 +233,7 @@
 
 		<div class="col-md-4 column">
 			<div class="col2">
-				<img src="images/t3.png" class="t2" alt="t3-img">
+				<img src="images/t3.png" class="t2">
 				<div class="social-content">
 				<h3 class="t2-text"><b>David Smith</b> <br>Co-Founder, CEO</h3>
 				<span class="social-icons">
@@ -192,6 +264,8 @@
 
 <!-- image slider -->
 
+
+
  <div class="center wow fadeInDown" data-wow-delay=".7s">
     <div><img src="images/rock.jpg"></div>
     <div><img src="images/starfish.jpg"></div>
@@ -201,7 +275,41 @@
     <div><img src="images/air.jpg"></div>
   </div>
 
+ <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   
+<script type="text/javascript">
+	
+	$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  arrows: true,
+  slidesToShow: 3,
+  infinite: true,
+   responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+</script> 
 <!-- end of image slider -->
 
 <!-- footer section -->
@@ -239,125 +347,5 @@
 <!-- end of footer section -->
 </div>
 <!-- end of main overflow-->
-
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script type="text/javascript">
-		jQuery(document).ready(function($){
-			$(window).load(function(){
-				$('#preloader').fadeOut('slow',function(){$(this).remove();});
-				$('#pre').fadeOut('slow',function(){$(this).remove();});
-				
-			});
-		});
-	</script>
-
-<script type="text/javascript">
-	
-	$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-
-
-<script>
-    $(document).ready(function(){
-      $(window).scroll(function() { 
-        if ($(document).scrollTop() > 50) {
-          $(".menu-phone").css("background-color", "rgba(0,0,0,0.9)"); 
-        } else {
-          $(".menu-phone").css("background-color", "transparent"); 
-        }
-      });
-    });
-</script>
-
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-<script type="text/javascript">
-	
-	$('.center').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  arrows: true,
-  slidesToShow: 3,
-  infinite: true,
-   responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
-</script>
-
-
-
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "220px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-
-
-<script type="text/javascript" src="WOW-master/dist/wow.js"></script>
-
-
-<script>
-wow = new WOW(
-{
-boxClass:'wow',
-animateClass:'animated',
-offset:100
-});
-wow.init();
-
-</script>
-
-
 </body>
 </html>
