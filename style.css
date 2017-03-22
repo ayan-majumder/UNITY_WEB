@@ -337,7 +337,7 @@ src:url("Poppins-SemiBold.ttf");
 
 }
 .content-img{
-	opacity: 0.7;
+	opacity: 0.8;
 	position: absolute;
 	width: 560px;
 	height: 390px;
@@ -508,7 +508,7 @@ left:10px;
 
 }
 
-#t2{
+.t2{
 	float: left;
 	width: 130px;
     height: 130px;
@@ -520,7 +520,7 @@ left:10px;
 	float: left;
 }
 
-#t2-text{
+.t2-text{
 
 	/*float: right;*/
 	font-size:12px;
@@ -1031,12 +1031,12 @@ min-height: 300px;
 margin:0 auto;
 }
 
-#t2-text{
+.t2-text{
 
 font-size: 16px; 
 }
 
-#t2{
+.t2{
 padding: 10px;
 /*margin-right: 10%;*/
 }
